@@ -1,6 +1,6 @@
 <template>
   <img alt="Vue logo" src="./assets/bg_trans_withSlogan_small.png">
-  <HelloFicus msg="An Enhenced Editor For Everyone" style="font-size: 30px"/>
+  <HelloFicus msg="An Structure Editor For Everyone" style="font-size: 30px"/>
 </template>
 
 <script>
