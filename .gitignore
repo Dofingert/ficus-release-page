@@ -1,0 +1,23 @@
+release-front/.DS_Store/
+release-front/node_modules/
+release-front/dist/
+
+
+# local env files
+release-front/.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
