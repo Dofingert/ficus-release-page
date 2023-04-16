@@ -1,15 +1,15 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img alt="Vue logo" src="./assets/bg_trans_withSlogan_small.png">
+  <HelloFicus msg="An Enhenced Editor For Everyone" style="font-size: 30px"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloFicus from './components/HelloFicus.vue'
 
 export default {
-  name: 'App',
+  name: 'App',  
   components: {
-    HelloWorld
+    HelloFicus
   }
 }
 </script>
