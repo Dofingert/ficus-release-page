@@ -8337,6 +8337,11 @@ vuepress-html-webpack-plugin@^3.2.0:
     toposort "^1.0.0"
     util.promisify "1.0.0"
 
+vuepress-plugin-baidu-tongji@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmmirror.com/vuepress-plugin-baidu-tongji/-/vuepress-plugin-baidu-tongji-1.0.1.tgz#2cdc502aad5f08b8134cdb1621adb32f4e398438"
+  integrity sha512-AqEWeW2Kv9Fpi8CrbGmrUPEVcrjL/aNxjj2U6DVqeMx/2OD1NCM3fFnhOlCtsyzIDtPs0itKzNA4yPbSA5MDIg==
+
 vuepress-plugin-container@^2.0.2:
   version "2.1.5"
   resolved "https://registry.npmmirror.com/vuepress-plugin-container/-/vuepress-plugin-container-2.1.5.tgz"

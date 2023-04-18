@@ -1,3 +1,4 @@
+const baiduCode = require("./config/baiduCode.js");
 module.exports = {
 	theme: "vdoing", // 使用依赖包主题
 	// theme: require.resolve('../../vdoing'), // 使用本地主题 (先将vdoing主题文件下载到本地：https://github.com/xugaoyi/vuepress-theme-vdoing)
@@ -65,6 +66,7 @@ module.exports = {
 		repo: "Thysrael/Ficus", // 导航栏右侧生成Github链接
 		searchMaxSuggestions: 10, // 搜索结果显示最大数
 		lastUpdated: "上次更新", // 更新的时间，及前缀文字   string | boolean (取值为git提交时间)
+		defaultMode: "light",
 
 		// docsDir: 'docs', // 编辑的文件夹
 		// editLinks: true, // 编辑链接
@@ -122,6 +124,12 @@ module.exports = {
 				copyMessage: "复制成功", // default is 'Copy successfully and then paste it for use.'
 				duration: 1000, // prompt message display time.
 				showInMobile: false, // whether to display on the mobile side, default: false.
+			},
+		],
+		[
+			"vuepress-plugin-baidu-tongji", // 百度统计
+			{
+				hm: baiduCode,
 			},
 		],
 		[
