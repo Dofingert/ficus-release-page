@@ -19,6 +19,6 @@ from backend import views
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
-    path('download',views.req_download),
-    path('get_record',views.get_download_record)
+    path('download', views.req_download),
+    path('get_record', views.get_download_record)
 ]

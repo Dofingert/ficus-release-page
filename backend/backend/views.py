@@ -1,6 +1,6 @@
 from backend.models import *
 import uuid
-import datetime
+from django.utils import timezone
 import json
 from django.http import JsonResponse
 from django.shortcuts import redirect
@@ -26,7 +26,12 @@ def req_download(request):
         target_url = DownloadChannel.objects.filter(id=target)[0]
         # print('uuid is ', user_uuid, ' target is ', target_url.url, '\n')
 
-        new_record = DownloadRecord(user=user, channel=target_url, time=datetime.datetime.now())
+        if 'HTTP_X_FORWARDED_FOR' in request.META:
+            ip = request.META['HTTP_X_FORWARDED_FOR']
+        else:
+            ip = request.META['REMOTE_ADDR']
+
+        new_record = DownloadRecord(user=user, channel=target_url, ip=ip, time=timezone.now())
         new_record.save()
 
         return redirect(target_url.url)
@@ -37,7 +42,8 @@ def get_download_record(request):
         if DownloadRecord.objects.count() > 0:
             ret = []
             for i in DownloadRecord.objects.iterator():
-                ret.append(model_to_dict(i))
+                t = model_to_dict(i)
+                ret.append(t)
             print(ret)
             return JsonResponse({"data": ret})
-        return JsonResponse({"0": "0"})
+        return JsonResponse({"data": []})

@@ -3,6 +3,10 @@ release-front/node_modules/
 release-front/dist/
 release-front/docs/.vuepress/dist
 
+backend/db.sqlite3
+backend/backend/__pycache__
+backend/migrations/__pycache__
+
 # local env files
 release-front/.env.local
 .env.*.local
