@@ -11,6 +11,19 @@ module.exports = {
 		["link", { rel: "icon", href: "/img/favicon.png" }], //favicons，资源放在public文件夹
 		["meta", { name: "keywords", content: "editor,markdown,electron,ficus" }],
 		["meta", { name: "theme-color", content: "#89D3B1" }], // 移动浏览器主题颜色
+		[
+			"script",
+			{},
+			`
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?31d16925859d7ef5721696ab9f4e8087";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        `,
+		],
 	],
 
 	// 主题配置
