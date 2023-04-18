@@ -4,7 +4,7 @@ import uuid
 
 class DownloadChannel(models.Model):
     # id is implicitly defined by django-orm
-    name = models.CharField(default='',max_length=63)
+    name = models.CharField(default='',max_length=64)
     url = models.URLField()
 
 
@@ -17,4 +17,5 @@ class DownloadUserRecord(models.Model):
 class DownloadRecord(models.Model):
     user = models.ForeignKey('DownloadUserRecord', on_delete=models.CASCADE)
     channel = models.ForeignKey('DownloadChannel', on_delete=models.CASCADE)
+    ip = models.CharField(max_length=64)
     time = models.DateTimeField()
