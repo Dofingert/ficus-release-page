@@ -1,7 +1,7 @@
 release-front/.DS_Store/
 release-front/node_modules/
 release-front/dist/
-
+release-front/docs/.vuepress/dist
 
 # local env files
 release-front/.env.local

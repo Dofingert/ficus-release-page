@@ -1,0 +1,18 @@
+[
+  {
+    "model": "backend.DownloadChannel",
+    "pk": 1,
+    "fields": {
+      "name": "github release",
+      "url": "https://github.com/Thysrael/Ficus/releases"
+    }
+  },
+  {
+    "model": "backend.DownloadChannel",
+    "pk": 2,
+    "fields": {
+      "name": "aliyun driver",
+      "url": "https://github.com/Thysrael/Ficus"
+    }
+  }
+]
