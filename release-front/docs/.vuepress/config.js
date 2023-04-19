@@ -228,6 +228,18 @@ module.exports = {
 				},
 			},
 		],
+		[
+			"@vssue/vuepress-plugin-vssue",
+			{
+				platform: "github",
+
+				// 其他的 Vssue 配置
+				owner: "Thysrael",
+				repo: "ficus",
+				clientId: "f66372fa5e1dd212d623",
+				clientSecret: "b7425d0a1cc64d16de57f537cb8a5aeef73cbf16",
+			},
+		],
 	],
 
 	markdown: {
