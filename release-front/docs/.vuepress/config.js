@@ -71,7 +71,7 @@ module.exports = {
 						link: "/pages/947a09/",
 					},
 					{
-						text: "问答",
+						text: "评论与问答",
 						link: "/pages/6338d8/",
 					},
 				],
