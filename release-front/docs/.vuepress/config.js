@@ -44,45 +44,74 @@ module.exports = {
 	themeConfig: {
 		nav: [
 			{ text: "首页", link: "/" },
-			// {
-			// 	text: "指南",
-			// 	link: "/pages/a2f161/",
-			// 	items: [
-			// 		{ text: "主题初衷与诞生", link: "/pages/52d5c3/" },
-			// 		{ text: "介绍", link: "/pages/a2f161/" },
-			// 		{ text: "快速上手", link: "/pages/793dcb/" },
-			// 		{ text: "目录结构", link: "/pages/2f674a/" },
-			// 		{ text: "核心配置和约定", link: "/pages/33d574/" },
-			// 		{ text: "自动生成front matter", link: "/pages/088c16/" },
-			// 		{ text: "Markdown 容器", link: "/pages/d0d7eb/" },
-			// 		{ text: "Markdown 中使用组件", link: "/pages/197691/" },
-			// 		{
-			// 			text: "相关文章",
-			// 			items: [
-			// 				{ text: "使目录栏支持h2~h6标题", link: "/pages/8dfab5/" },
-			// 				{ text: "如何让你的笔记更有表现力", link: "/pages/dd027d/" },
-			// 				{ text: "批量操作front matter工具", link: "/pages/2b8e22/" },
-			// 				{ text: "部署", link: "/pages/0fc1d2/" },
-			// 				{ text: "关于写文章和H1标题", link: "/pages/9ae0bd/" },
-			// 				{ text: "关于博客搭建与管理", link: "/pages/26997d/" },
-			// 				{ text: "在线编辑和新增文章的方法", link: "/pages/c5a54d/" },
-			// 			],
-			// 		},
-			// 	],
-			// },
-			// {
-			// 	text: "配置",
-			// 	link: "/pages/a20ce8/",
-			// 	items: [
-			// 		{ text: "主题配置", link: "/pages/a20ce8/" },
-			// 		{ text: "首页配置", link: "/pages/f14bdb/" },
-			// 		{ text: "front matter配置", link: "/pages/3216b0/" },
-			// 		{ text: "目录页配置", link: "/pages/54651a/" },
-			// 		{ text: "添加摘要", link: "/pages/1cc523/" },
-			// 		{ text: "修改主题颜色和样式", link: "/pages/f51918/" },
-			// 		{ text: "评论栏", link: "/pages/ce175c/" },
-			// 	],
-			// },
+			{
+				text: "指南",
+				link: "/pages/162381/",
+				items: [
+					{
+						text: "产品介绍",
+						link: "/pages/162381/",
+						// items: [
+						// 	{ text: "初衷与灵感", link: "/pages/22792a/" },
+						// 	{ text: "产品概述", link: "/pages/162381/" },
+						// 	{ text: "快速上手", link: "/pages/c454a8/" },
+						// ],
+					},
+					{
+						text: "功能",
+						link: "/pages/b4868b/",
+						// items: [
+						// 	{ text: "功能分区", link: "/pages/b4868b/" },
+						// 	{ text: "ficus 功能", link: "/pages/ed68ff/" },
+						// 	{ text: "其他功能", link: "/pages/e7580b/" },
+						// ],
+					},
+					{
+						text: "典型场景",
+						link: "/pages/947a09/",
+					},
+					{
+						text: "问答",
+						link: "/pages/6338d8/",
+					},
+				],
+			},
+			{
+				text: "开发",
+				link: "/pages/fc3ecc/",
+				items: [
+					{
+						text: "文档",
+						link: "/pages/fc3ecc/",
+						items: [
+							{
+								text: "需求功能",
+								link: "/pages/fc3ecc/",
+								items: [
+									{ text: "原型设计", link: "/pages/fc3ecc/" },
+									{ text: "理论支撑", link: "/pages/b190d0/" },
+								],
+							},
+							{
+								text: "技术规格",
+								link: "/pages/a15ca0/",
+								items: [
+									{ text: "项目架构", link: "/pages/a15ca0/" },
+									{ text: "测试", link: "/pages/7e127e/" },
+								],
+							},
+						],
+					},
+					{
+						text: "日志",
+						link: "/pages/375bc4/",
+						items: [
+							{ text: "开发日志", link: "/pages/375bc4/", items: [] },
+							{ text: "宣发日志", link: "/pages/a59530/", items: [] },
+						],
+					},
+				],
+			},
 			// { text: "资源", link: "/pages/db78e2/" },
 			{ text: "下载", link: "/pages/53ff34/" },
 			{
