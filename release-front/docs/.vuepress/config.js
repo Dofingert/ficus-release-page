@@ -18,11 +18,25 @@ module.exports = {
         var _hmt = _hmt || [];
         (function() {
           var hm = document.createElement("script");
-          hm.src = "https://hm.baidu.com/hm.js?31d16925859d7ef5721696ab9f4e8087";
+          hm.src = "https://ficus.world/bdapi/hm.js?31d16925859d7ef5721696ab9f4e8087";
           var s = document.getElementsByTagName("script")[0]; 
           s.parentNode.insertBefore(hm, s);
         })();
         `,
+		],
+		[
+			"link",
+			{
+				rel: "stylesheet",
+				href: "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css",
+			},
+		],
+		[
+			"link",
+			{
+				rel: "stylesheet",
+				href: "https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/2.10.0/github-markdown.min.css",
+			},
 		],
 	],
 
@@ -185,20 +199,16 @@ module.exports = {
 				},
 			},
 		],
-		[
-			"vuepress-plugin-mathjax",
-			{
-				target: "svg",
-				macros: {
-					"*": "\\times",
-				},
-			},
-		],
 	],
 
 	markdown: {
 		// lineNumbers: true,
 		extractHeaders: ["h2", "h3", "h4", "h5", "h6"], // 提取标题到侧边栏的级别，默认['h2', 'h3']
+	},
+
+	extendMarkdown(md) {
+		md.set({ html: true });
+		md.use(require("markdown-it-katex"));
 	},
 
 	// 监听文件变化并重新构建
