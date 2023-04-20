@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /img/ficus_logo.png
+heroImage: /img/ficus_logo2.png
 heroText: ficus
 tagline: 一款结构化的 markdown 编辑管理器
 actionText: 立即体验 →
