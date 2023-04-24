@@ -19,3 +19,17 @@ features: # 可选的
 postList: none
 ---
 
+<p align="center">
+  <a class="become-sponsor" href="/pages/87ba98/">支持这个项目</a>
+</p>
+
+<style>
+.become-sponsor {
+  padding: 8px 20px;
+  display: inline-block;
+  color: #11a8cd;
+  border-radius: 30px;
+  box-sizing: border-box;
+  border: 1px solid #11a8cd;
+}
+</style>
