@@ -15,6 +15,7 @@ def req_download(request):
             user_uuid = uuid.uuid1()
             user = DownloadUserRecord(uuid=user_uuid)
             user.save()
+            request.session['uuid'] = user_uuid
         else:
             user = user[0]
 

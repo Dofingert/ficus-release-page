@@ -12,7 +12,15 @@
     "pk": 2,
     "fields": {
       "name": "aliyun driver",
-      "url": "https://github.com/Thysrael/Ficus"
+      "url": "https://www.aliyundrive.com/s/SscmHCXppf7"
+    }
+  },
+  {
+    "model": "backend.DownloadChannel",
+    "pk": 3,
+    "fields": {
+      "name": "google driver",
+      "url": "https://drive.google.com/drive/folders/1oBC3vb9yearPjNCzCQcD2phXiS-C1sHP?usp=sharing"
     }
   }
 ]
