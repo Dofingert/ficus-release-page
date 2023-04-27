@@ -12,10 +12,10 @@ def req_download(request):
         user_uuid = request.session.get('uuid')
         user = DownloadUserRecord.objects.filter(uuid=user_uuid)
         if user.count() == 0:
-            user_uuid = uuid.uuid1()
+            user_uuid = str(uuid.uuid1())
             user = DownloadUserRecord(uuid=user_uuid)
             user.save()
-            request.session['uuid'] = user_uuid
+            request.session['uuid'] = user.uuid
         else:
             user = user[0]
 
